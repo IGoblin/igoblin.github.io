@@ -1,0 +1,242 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+body,html{
+margin:0px;
+padding:0px;
+background-attachment: fixed;
+}
+#maket { z-index: 50;
+width:800px;
+margin:0 auto;
+}
+.a, .b{position:relative;
+	font-size:28px;
+           width:100px;
+		   float: center;
+             }
+     .b{left:-2px;
+         top:-35;
+       color:blue;
+         z-index:+10;
+             }  
+.a1, .b1{font-size:36px;
+           width:100px
+ 	text-align:center 
+               }
+     .b1{position:relative;
+         left:-2px;
+         top:-41;
+       color:red;
+         z-index:+1;
+             }  
+       .a,.a1{color:yellow} 
+#layer1 {
+	z-index: 100;
+	background-image: url(images/logo.png);
+	position:fixed; 
+	top:237;
+    width: 807px;
+	height: 35px;
+    left: 420px;             
+}
+#layer2 {
+	z-index: 101;
+	position:fixed; 
+	top:150;
+    width: 807px;
+	height: 20px;
+    left: 274px;
+}
+#layer3 {
+	z-index: 2;
+	position: absolute;
+	top: 270px; 
+	background-color:#cccccc;
+	left: 420px; 
+	width: 807px;
+	height: 710px;
+}
+#layer4 {
+	z-index: 1;
+	position: absolute;
+	top: 270px; 
+	background-color:#cccccc;
+	left: 420px; 
+	width: 807px;
+	height: 530px;
+}
+#Advertising1 { z-index: 10;
+background-image: url(images/fon_menu.png);
+position: fixed;  
+right: 20px; 
+top: 5px; 
+padding: 5px;
+width: 220px; height: 220px;
+}
+#Advertising2 { z-index: 10;
+background-image: url(images/fon_menu.png);
+position: fixed;  
+left: 5px; 
+top: 5px; 
+padding: 5px;
+width: 160px; height: 160px;
+}
+
+#Advertising3 { z-index: 10;
+background-image: url(images/fon_menu.png);
+position: fixed;  
+right: 20px; 
+top: 300px; 
+padding: 5px;
+width: 220px; height: 220px;
+}
+
+#Logo,#Logo1,#Logo2,#Logo3
+{
+	z-index: 100;
+	background-image: url(images/logo_world.png);
+	position: fixed; 
+  	width: 807px;
+	height: 201px;
+}
+<ul class="menu">
+	<li><a href=#>Menu 1</a>
+		<ul class="submenu">
+			<li><a href=#>Submenu 1</a></li>
+			<li><a href=#>Submenu 1</a></li>
+			<li><a href=#>Submenu 1</a></li>
+		</ul>
+	</li>
+
+A:link {font-weight: bold;
+	color: #000080;
+}
+A:visited {font-weight: bold;
+	color: #000080;
+}
+A:active {font-weight: bold;
+	color: #000080;
+}
+A:hover {font-weight: bold;
+	color:#008000 ;
+}
+.style1 {font-size: 18px;
+	text-align:center;}
+.style2 {font-size: 22px;
+	text-align:center;
+	color: Maroon}
+.style3 {
+	font-size: 16px;
+	color: #FFFFFF;
+		}
+.style4 {font-size: 16px;
+	color: Navy;}
+.style5 {
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+}
+.style2u {font-size: 16px;
+	color: #000000;}
+.style3u {font-size: 16px;
+	color: #008080;}
+.style1,.style2,.style3, .style3u{font-weight: bold}
+
+/*Горизонтальное выпадающее меню*/
+
+ul.menu {
+	margin: 0;
+	padding: 0;
+
+display: inline-block;
+	
+background-repeat: no-repeat;
+    
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4f4f4f), to(#2b2b2b));
+   
+border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	width: 807px;
+	position: fixed; 
+	top: 201px; 
+background-color: #2b2b2b;z-index: 1000;
+ }
+
+
+ul.menu li { 
+float: left;
+	list-style: none;
+	border-right: 1px solid #4f4f4f;
+	position: relative;
+}
+
+
+ul.menu li a {
+color: white;
+display: block;
+font-family: Arial;
+font-size: 16px;
+padding: 8px 20px 10px;
+
+text-decoration: none;
+border-right: 1px solid #2b2b2b;
+}
+
+
+ul.menu li a:hover {background-color: #2b2b2b;
+z-index: 1000;}
+
+
+ul.menu li:first-child a:hover {
+border-radius: 4px 0 0 4px;
+-webkit-border-radius: 4px 0 0 4px;
+-moz-border-radius: 4px 0 0 4px;
+}
+
+/*Выпадающее меню*/
+
+ul.menu li ul {display: none;
+}
+
+
+ul.menu li:hover ul {
+	display: block;
+position: absolute;top: 34px;
+border-radius: 0 0 4px 4px;
+
+-webkit-border-radius: 0 0 4px 4px;-moz-border-radius: 0 0 4px 4px;
+background-color: #2b2b2b;
+z-index: 1000;
+}
+
+
+ul.menu li:hover ul li {
+float: none;
+width: 117px;
+border-right: none;
+}
+
+
+ul.menu li:hover ul li a {
+border-top: 1px solid #4f4f4f;
+	border-right: none;	padding: 3px 10px 20px;
+}
+
+
+ul.menu li:hover ul li a:hover {
+	background-color: transparent;
+	color: #c1deff;
+}
+
+
+ul.menu li:hover ul li:first-child a:hover {
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+	
